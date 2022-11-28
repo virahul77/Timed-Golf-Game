@@ -1,0 +1,116 @@
+.heading-timer {
+  position: absolute;
+  top: 50px;
+  left: 720px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto:ital,wght@1,100&display=swap");
+
+body{
+  background-color: #c97575;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.ballProvider {
+  font-family: "Fredoka One", cursive;
+  background-color: #202124;
+  color: white;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  width: 195px;
+  margin: 15px;
+  height: 60px;
+
+}
+
+
+.ball {
+  background-color: black;
+  box-shadow: 0 10px 10px -6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  transition: all 0.1s linear;
+}
+
+.btn{
+  padding: 0.7rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  background-color: blueviolet;
+  transition: all 0.3s linear;
+}
+.btn:hover{
+  transform: scaleX(1.1);
+  background-color: green;
+  color: white;
+}
+
+
+.hole {
+  background-color: rgb(62, 85, 107);
+  box-shadow: 0 10px 10px 0px;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  transition: all 1s linear;
+}
+
+#startPage{
+  font-size: 1.5rem;
+  margin-top: 10%;
+  line-height: 1rem;
+  padding: 2rem;
+  display: inline-block;
+  background-color: rgba(210, 66, 184,0.5);
+  border-radius: 8rem;
+  animation: animateStart 0.5s linear;
+  box-shadow: -2rem 2rem 2rem rgb(46, 26, 26);
+}
+
+.winPage{
+  box-shadow: -15px 15px 10px rgb(48, 19, 42);
+  margin-top: 10%;
+  padding: 2rem;
+  display: inline-block;
+  background-color: rgba(66, 210, 176,0.5);
+  border-radius: 4rem;
+  animation: animateStart 1s linear;
+}
+.loose{
+  background-color: rgba(255, 0, 0, 0.5);
+}
+@keyframes animateStart {
+ from{
+  margin-top: 5%;
+  margin-left: -5%
+ } 
+ to{
+  margin-top: 10%;
+ }
+}
+
+.sideStatus{
+  background-color: rgba(0, 0, 0, 0.25);
+  box-shadow: -5px 5px 5px rgb(0, 0, 0 );
+  padding: 2rem;
+  border-radius: 2rem;
+  position: absolute;
+  /* font-size: 1.3rem; */
+  line-height: 1rem;
+  right: 2rem;
+  top: 2rem;
+}
